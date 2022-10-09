@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)file:///C:/Users/ezequ/Downloads/calculadora%20(1).html -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Cientifica</title>
+ 
+  
+</head>
+<body>
+    
+    <div class="fundo">
+       
+    <form name="sci-calc">
+        
+        <table class="calculadora" cellspacing="0" cellpadding="1">
+        <tbody><tr>
+        <td colspan="5"><input id="display" name="display" value="0" size="28" maxlength="25"></td>
+        </tr>
+        <tr>
+        <td><input type="button" class="botaodel" name="botaodel" value="C" onclick="this.form.display.value= 0 "></td>
+        <td><input type="button" class="botaodel" name="botaodel" value="⌦" onclick="deleteChar(this.form.display)"></td>
+        <td><input type="button" class="botao1" name="botao1" value="tan" onclick="if(checkNum(this.form.display.value)) { tan(this.form) }"></td>
+        <td><input type="button" class="botao2" name="botao2" value="%" onclick=" percent(this.form.display)"></td>  
+        <td><input type="button" class="botao2" name="botao2" value="÷" onclick="addChar(this.form.display, &#39;/&#39;)"></td>     
+        </tr>
+        <tr>
+        <td><input type="button" class="botao1" name="botao1" value="7" onclick="addChar(this.form.display, &#39;7&#39;)"></td>
+        <td><input type="button" class="botao1" name="botao1" value="8" onclick="addChar(this.form.display, &#39;8&#39;)"></td>
+        <td><input type="button" class="botao1" name="botao1" value="9" onclick="addChar(this.form.display, &#39;9&#39;)"></td>
+        <td><input type="button" class="botao2" name="botao2" value="x^" onclick="if(checkNum(this.form.display.value)) { exp(this.form) }"></td>
+        <td><input type="button" class="botao2" name="botao2" value="x" onclick="addChar(this.form.display, &#39;*&#39;)"></td>
+        </tr><tr>
+        <td><input type="button" class="botao1" name="botao1" value="4" onclick="addChar(this.form.display, &#39;4&#39;)"></td>
+        <td><input type="button" class="botao1" name="botao1" value="5" onclick="addChar(this.form.display, &#39;5&#39;)"></td>
+        <td><input type="button" class="botao1" name="botao1" value="6" onclick="addChar(this.form.display, &#39;6&#39;)"></td>
+        <td><input type="button" class="botao2" name="botao2" value="ln" onclick="if(checkNum(this.form.display.value)) { ln(this.form) }"></td>
+        <td><input type="button" class="botao2" name="botao2" value="-" onclick="addChar(this.form.display, &#39;-&#39;)"></td>
+        </tr>
+        <tr>
+        <td><input type="button" class="botao1" name="botao1" value="1" onclick="addChar(this.form.display, &#39;1&#39;)"></td>
+        <td><input type="button" class="botao1" name="botao1" value="2" onclick="addChar(this.form.display, &#39;2&#39;)"></td>
+        <td><input type="button" class="botao1" name="botao1" value="3" onclick="addChar(this.form.display, &#39;3&#39;)"></td>
+        <td><input type="button" class="botao2" name="botao2" value="√" onclick="if(checkNum(this.form.display.value)) { sqrt(this.form) }"></td>
+        <td><input type="button" class="botao2" name="botao2" value="+" onclick="addChar(this.form.display, &#39;+&#39;)"></td>
+        </tr>
+        <tr>
+        <td><input type="button" class="botao1" name="botao1" value="±" onclick="changeSign(this.form.display)"></td>
+        <td><input type="button" class="botao1" name="botao1" value="0" onclick="addChar(this.form.display, &#39;0&#39;)"></td>
+        <td><input type="button" class="botao1" name="botao1" value="." onclick="addChar(this.form.display, &#39;.&#39;)"></td>
+        <td><input type="button" class="botao2" name="botao2" value="x2" onclick="if(checkNum(this.form.display.value)) { square(this.form) }"></td>
+        <td rowspan="2"><input type="button" class="botaoi" style="height: 125px;" name="botaoi" value="=" onclick="if(checkNum(this.form.display.value)) { compute(this.form) }"></td>
+ </tr>
+        <tr>
+        <td><input type="button" class="botao1" name="botao1" value="(" onclick="addChar(this.form.display, &#39;(&#39;)"></td>
+        <td><input type="button" class="botao1" name="botao1" value=")" onclick="addChar(this.form.display,&#39;)&#39;)"></td>
+        <td><input type="button" class="botao1" name="botao1" value="cos" onclick="if(checkNum(this.form.display.value)) { cos(this.form) }"></td>
+        <td><input type="button" class="botao2" name="botao2" value="sin" onclick="if(checkNum(this.form.display.value)) { sin(this.form) }"></td>
+        
+        
+        </tr>
+    
+
+</tbody></table></form></div></body></html>
